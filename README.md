@@ -470,9 +470,10 @@ conda install tensorflow-gpu
 ```
 Then restart this guide from Step 2 (but you can skip the part where you install TensorFlow in Step 2d).
 
-####7. ImportError: cannot import name 'cloud' from 'tensorflow.contrib' (/usr/local/lib/python3.7/dist-packages/tensorflow/contrib/__init__.py)
+#### 7. ImportError: cannot import name 'cloud' from 'tensorflow.contrib' (/usr/local/lib/python3.7/dist-packages/tensorflow/contrib/__init__.py)
+  
  ```
- sudo nano ImportError: cannot import name 'cloud' from 'tensorflow.contrib' (/usr/local/lib/python3.7/dist-packages/tensorflow/contrib/__init__.py)
+ sudo nano /usr/local/lib/python3.7/dist-packages/tensorflow/contrib/__init__.py
    注释:
     #if os.name != "nt" and platform.machine() != "s390x":
      #  from tensorflow.contrib import cloud
